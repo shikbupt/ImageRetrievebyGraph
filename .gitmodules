@@ -1,0 +1,6 @@
+[submodule "UsefulSnippets"]
+	path = UsefulSnippets
+	url = git@github.com:shikbupt/UsefulSnippets.git
+[submodule "ImgGraph"]
+	path = ImgGraph
+	url = git@github.com:shikbupt/ImgGraph.git
