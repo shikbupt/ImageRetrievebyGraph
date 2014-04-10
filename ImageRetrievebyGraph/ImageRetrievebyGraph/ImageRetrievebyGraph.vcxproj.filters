@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\CEDD">
+      <UniqueIdentifier>{5758a817-c0d8-42e2-9975-98236f2f4fe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\LBP">
+      <UniqueIdentifier>{c7a43aca-3110-4c15-8892-4413d19593f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\CEDD">
+      <UniqueIdentifier>{e591ad88-9596-4f4c-9f14-d61b813a469f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\LBP">
+      <UniqueIdentifier>{0dd51135-9ad1-4f75-9df7-d68ebb4f642d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="feature.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LBP\getLBPfeature.h">
+      <Filter>头文件\LBP</Filter>
+    </ClInclude>
+    <ClInclude Include="CEDD\CEDDFeature.h">
+      <Filter>头文件\CEDD</Filter>
+    </ClInclude>
+    <ClInclude Include="CEDD\CEDDQuant.h">
+      <Filter>头文件\CEDD</Filter>
+    </ClInclude>
+    <ClInclude Include="CEDD\CompactCEDDQuant.h">
+      <Filter>头文件\CEDD</Filter>
+    </ClInclude>
+    <ClInclude Include="CEDD\FeatureExtract.h">
+      <Filter>头文件\CEDD</Filter>
+    </ClInclude>
+    <ClInclude Include="CEDD\Fuzzy10Bin.h">
+      <Filter>头文件\CEDD</Filter>
+    </ClInclude>
+    <ClInclude Include="CEDD\Fuzzy24Bin.h">
+      <Filter>头文件\CEDD</Filter>
+    </ClInclude>
+    <ClInclude Include="CEDD\RGB2HSV.h">
+      <Filter>头文件\CEDD</Filter>
+    </ClInclude>
+    <ClInclude Include="UsefulSnippets\SystemOperations\file_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgGraph\dot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgGraph\graph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgGraph\GraphFusion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImgGraph\util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageRetrievebyGraph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="feature.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CEDD\CEDDFeature.cpp">
+      <Filter>源文件\CEDD</Filter>
+    </ClCompile>
+    <ClCompile Include="CEDD\CEDDQuant.cpp">
+      <Filter>源文件\CEDD</Filter>
+    </ClCompile>
+    <ClCompile Include="CEDD\CompactCEDDQuant.cpp">
+      <Filter>源文件\CEDD</Filter>
+    </ClCompile>
+    <ClCompile Include="CEDD\FeatureExtract.cpp">
+      <Filter>源文件\CEDD</Filter>
+    </ClCompile>
+    <ClCompile Include="CEDD\Fuzzy10Bin.cpp">
+      <Filter>源文件\CEDD</Filter>
+    </ClCompile>
+    <ClCompile Include="CEDD\Fuzzy24Bin.cpp">
+      <Filter>源文件\CEDD</Filter>
+    </ClCompile>
+    <ClCompile Include="CEDD\RGB2HSV.cpp">
+      <Filter>源文件\CEDD</Filter>
+    </ClCompile>
+    <ClCompile Include="LBP\getLBPfeature.cpp">
+      <Filter>源文件\LBP</Filter>
+    </ClCompile>
+    <ClCompile Include="UsefulSnippets\SystemOperations\file_list.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgGraph\dot.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgGraph\graph.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgGraph\GraphFusion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImgGraph\util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

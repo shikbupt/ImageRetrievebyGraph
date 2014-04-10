@@ -1,6 +1,6 @@
-[submodule "UsefulSnippets"]
-	path = UsefulSnippets
+[submodule "ImageRetrievebyGraph/ImageRetrievebyGraph/UsefulSnippets"]
+	path = ImageRetrievebyGraph/ImageRetrievebyGraph/UsefulSnippets
 	url = git@github.com:shikbupt/UsefulSnippets.git
-[submodule "ImgGraph"]
-	path = ImgGraph
-	url = git@github.com:shikbupt/ImgGraph.git
+[submodule "ImageRetrievebyGraph/ImageRetrievebyGraph/ImgGraph"]
+	path = ImageRetrievebyGraph/ImageRetrievebyGraph/ImgGraph
+	url = https://github.com/shikbupt/ImgGraph.git

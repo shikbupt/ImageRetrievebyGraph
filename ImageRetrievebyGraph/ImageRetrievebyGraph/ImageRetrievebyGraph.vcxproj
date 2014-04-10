@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EC258BB3-64B3-4C4C-BF93-867898D998AC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ImageRetrievebyGraph</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_core241d.lib;opencv_highgui241d.lib;opencv_calib3d241d.lib;opencv_contrib241d.lib;opencv_features2d241d.lib;opencv_objdetect241d.lib;opencv_flann241d.lib;opencv_ml241d.lib;opencv_ts241d.lib;opencv_imgproc241d.lib;opencv_legacy241d.lib;opencv_nonfree241d.lib;opencv_photo241d.lib;opencv_stitching241d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CEDD\CEDDFeature.h" />
+    <ClInclude Include="CEDD\CEDDQuant.h" />
+    <ClInclude Include="CEDD\CompactCEDDQuant.h" />
+    <ClInclude Include="CEDD\FeatureExtract.h" />
+    <ClInclude Include="CEDD\Fuzzy10Bin.h" />
+    <ClInclude Include="CEDD\Fuzzy24Bin.h" />
+    <ClInclude Include="CEDD\RGB2HSV.h" />
+    <ClInclude Include="feature.h" />
+    <ClInclude Include="ImgGraph\dot.h" />
+    <ClInclude Include="ImgGraph\graph.h" />
+    <ClInclude Include="ImgGraph\GraphFusion.h" />
+    <ClInclude Include="ImgGraph\util.h" />
+    <ClInclude Include="LBP\getLBPfeature.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UsefulSnippets\SystemOperations\file_list.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CEDD\CEDDFeature.cpp" />
+    <ClCompile Include="CEDD\CEDDQuant.cpp" />
+    <ClCompile Include="CEDD\CompactCEDDQuant.cpp" />
+    <ClCompile Include="CEDD\FeatureExtract.cpp" />
+    <ClCompile Include="CEDD\Fuzzy10Bin.cpp" />
+    <ClCompile Include="CEDD\Fuzzy24Bin.cpp" />
+    <ClCompile Include="CEDD\RGB2HSV.cpp" />
+    <ClCompile Include="feature.cpp" />
+    <ClCompile Include="ImageRetrievebyGraph.cpp" />
+    <ClCompile Include="ImgGraph\dot.cpp" />
+    <ClCompile Include="ImgGraph\graph.cpp" />
+    <ClCompile Include="ImgGraph\GraphFusion.cpp" />
+    <ClCompile Include="ImgGraph\util.cpp" />
+    <ClCompile Include="LBP\getLBPfeature.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="UsefulSnippets\SystemOperations\file_list.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
